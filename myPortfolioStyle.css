@@ -1,0 +1,202 @@
+/* myStyle.css */
+
+/*General Rules*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main section {
+  padding: 50px 0;
+}
+
+main h2 {
+  padding: 10px 0;
+}
+
+#about h2, #contact h2 {
+  color: #f6bccb;
+}
+
+#free-code-camp, #projects, #contact h2 {
+  text-align: center;
+}
+
+#free-code-camp, #projects, #contact p {
+  text-align: center;
+}
+
+/*Navbar*/
+
+#navbar {
+  position: fixed;
+  text-align: right;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+#navbar a {
+  color: #f6bccb;
+  padding: 20px;
+}
+
+/*Top Section*/
+
+#welcome-section {
+  height: 100vh;
+  background: url("RealArtBackgrounds15small.jpg");
+}
+
+#welcome-section h1 {
+  padding-top: 45vh;
+}
+
+#welcome-section p {
+  padding-bottom: 45vh;
+}
+
+.intro-text {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+/*About Section*/
+
+#about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 50px 0;
+}
+
+#about-photo {
+  width: 600px;
+  margin-left: -80px;
+}
+
+#about-text {
+  padding: 100px 25% 100px 0;
+}
+
+/*Portfolio Section*/
+/*General Portfolio*/
+.portfolio-piece {
+  padding-top: 30px;
+}
+
+.image {
+  width: 100%;
+}
+
+/*Coding Portfolio*/
+
+#free-code-camp {
+  padding: 100px 15%;
+  color: white;
+  background-color: #FAD9E1;
+}
+
+.portfolio-grid-1 {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  justify-items: center;
+  grid-gap: 25px;
+}
+
+.portfolio-title-1 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+/*Client Portfolio*/
+
+#projects {
+  padding: 100px 15%;
+  color: #f6bccb;
+  background-color: #F1F9FA;
+}
+
+.portfolio-grid-2 {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  justify-items: center;
+  grid-gap: 25px;
+}
+
+.portfolio-title-2 {
+  text-align: center;
+  padding: 10px;
+  color: #f6bccb;
+}
+
+/*Contact Section*/
+
+#contact {
+  padding: 100px 20%;
+}
+
+/*Footer*/
+
+#footer {
+  text-align: center;
+  color: white;
+  background-color: #FAD9E1;
+  padding: 20px 0;
+}
+
+/*Responsive*/
+@media (max-width: 1200px) {
+  #about-photo {
+    width: 100%;
+  }
+
+  #about-text {
+    padding: 20% 20% 20% 0;
+  }
+
+  #free-code-camp, #projects {
+    padding: 100px 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  #about {
+    display: block;
+  }
+
+  #about-photo {
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+
+  #about-text {
+    padding: 20px 10%;
+    text-align: center;
+  }
+
+  .portfolio-grid-1, .portfolio-grid-2 {
+    display: block;
+  }
+}
