@@ -37,11 +37,11 @@ main h2 {
   color: #f6bccb;
 }
 
-#free-code-camp, #projects, #contact h2 {
+#jquery-projects, #javascript-projects, #client-projects, #contact h2 {
   text-align: center;
 }
 
-#free-code-camp, #projects, #contact p {
+#javascript-projects, #client-projects, #contact p {
   text-align: center;
 }
 
@@ -108,12 +108,32 @@ main h2 {
   width: 100%;
 }
 
-/*Coding Portfolio*/
+/*jQuery Portfolio*/
 
-#free-code-camp {
+#jquery-projects {
   padding: 100px 15%;
   color: white;
   background-color: #FAD9E1;
+}
+
+.portfolio-grid-2 {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  justify-items: center;
+  grid-gap: 25px;
+}
+
+.portfolio-title-3 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+/*JavaScript Portfolio*/
+
+#javascript-projects {
+  padding: 100px 15%;
+  color: #FAD9E1;
+  background-color: white;
 }
 
 .portfolio-grid-1 {
@@ -126,23 +146,24 @@ main h2 {
 .portfolio-title-1 {
   text-align: center;
   padding: 10px;
-  color: white;
+  color: #FAD9E1;
 }
 
 /*Client Portfolio*/
 
-#projects {
+#client-projects {
   padding: 100px 15%;
   color: #f6bccb;
   background-color: #F1F9FA;
 }
 
-.portfolio-grid-2 {
+/*Don't need duplicate - this is in jQuery section*/
+/*.portfolio-grid-2 {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   justify-items: center;
   grid-gap: 25px;
-}
+}*/
 
 .portfolio-title-2 {
   text-align: center;
